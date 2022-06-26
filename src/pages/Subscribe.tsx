@@ -25,7 +25,7 @@ export function Subscribe() {
 
   return (
     <>
-      <div className="relative min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center px-4">
+      <div className="relative min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center px-4 overflow-x-hidden">
         <div className="min-w-[533px] w-full max-w-[654px] absolute top-0">
           <ReactLogo />
         </div>
