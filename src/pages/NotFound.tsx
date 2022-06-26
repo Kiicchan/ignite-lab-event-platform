@@ -88,12 +88,21 @@ export function NotFound() {
       })
     
       return (
-        <div className={`min-h-screen max-h-screen flex flex-1 flex-col items-center justify-center gap-6 p-2 relative`}>
+        <div className="min-h-screen flex flex-col items-center justify-center gap-6 p-2 relative">
           <canvas id="notfoundcanvas" className="h-full w-full absolute" />
-          <h2 className="text-xl md:text-3xl text-gray-200 z-10 cursor-default pointer-events-none text-center relative">Página não encontrada<span className='inline-flex absolute rigth-0 -bottom-1 animate-bounce m-2'><RocketIcon /></span></h2>
-          
+
+          <h2 className="text-xl md:text-3xl text-gray-200 z-10 cursor-default pointer-events-none text-center relative">
+            Página não encontrada
+            <span className="inline-flex absolute rigth-0 -bottom-1 animate-bounce m-2">
+              <RocketIcon />
+            </span>
+          </h2>
           <p className="text-base md:text-lg text-gray-200 z-10 text-center">
-            Perdido? Clique <Link to={'/event'} className="text-green-300">aqui</Link> e volte para onde você pode acelerar sua evolução!
+            Perdido? Clique{' '}
+            <Link to={'/event'} className="text-green-300">
+              aqui
+            </Link>{' '}
+            e volte para onde você pode acelerar sua evolução!
           </p>
         </div>
       )
