@@ -1,9 +1,9 @@
 import { Player, Youtube } from '@vime/react'
 import { CaretRight, DiscordLogo, FileArrowDown, Lightning, Image, CircleNotch } from 'phosphor-react'
-import { useState } from "react";
+import { useState } from 'react'
 
 import '@vime/core/themes/default.css'
-import { useGetLessonBySlugQuery } from '../graphql/generated';
+import { useGetLessonBySlugQuery } from '../graphql/generated'
 
 interface VideoProps {
   lessonSlug: string
@@ -16,18 +16,24 @@ export function Video(props: VideoProps) {
     },
   })
   const [isPaused, setIsPaused] = useState(false)
-
   if (error) {
     return (
       <div className="flex items-center justify-center flex-1">
-        <p>Algo deu errado</p>
+        <p className="text-gray-200">oops, algo deu errado!</p>
       </div>
     )
   }
-  if (!data || !data.lesson) {
+  if (!data) {
     return (
       <div className={`flex items-center justify-center flex-1`}>
-        <CircleNotch size={60} className="animate-spin" />
+        <CircleNotch size={60} className="animate-spin text-gray-200" />
+      </div>
+    )
+  }
+  if (!data.lesson) {
+    return (
+      <div className="flex items-center justify-center flex-1">
+        <p className="text-gray-200">oops, aula não encontrada!</p>
       </div>
     )
   }

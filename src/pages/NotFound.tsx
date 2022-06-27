@@ -97,9 +97,9 @@ export function NotFound() {
               <RocketIcon />
             </span>
           </h2>
-          <p className="text-base md:text-lg text-gray-200 z-10 text-center">
+          <p className="text-base md:text-lg text-gray-200 z-10 text-center cursor-default pointer-events-none">
             Perdido? Clique{' '}
-            <Link to={'/event'} className="text-green-300">
+            <Link to={'/event'} className="text-green-300 cursor-pointer pointer-events-auto">
               aqui
             </Link>{' '}
             e volte para onde você pode acelerar sua evolução!
