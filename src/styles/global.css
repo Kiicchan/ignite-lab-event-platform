@@ -9,7 +9,7 @@ body {
 
 @layer utilities {
   ::-webkit-scrollbar {
-    @apply hidden md:block w-2;
+    @apply hidden md:block w-1;
   }
 
   
@@ -18,10 +18,10 @@ body {
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-gray-600 rounded;
+    @apply bg-green-900 rounded;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-gray-500;
+    @apply bg-green-700;
   }
 }

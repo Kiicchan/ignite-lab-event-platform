@@ -11,10 +11,10 @@ export function Event() {
   const [hideMenu, setHideMenu] = useState(true)
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col h-screen">
       <Header toggleMenu={() => setHideMenu((state) => !state)} isMenuHidden={hideMenu} />
-      <main className="flex flex-1">
-        <div className={`flex-1 flex-col justify-center ${!hideMenu ? 'hidden md:flex' : 'flex'}`}>
+      <main className="flex flex-1 min-h-0">
+        <div className={`flex-1 h-full overflow-y-auto flex-col ${!hideMenu ? 'hidden md:flex' : 'flex'}`}>
           {slug ? <Video lessonSlug={slug} /> : <Welcome />}
           <Footer />
         </div>
