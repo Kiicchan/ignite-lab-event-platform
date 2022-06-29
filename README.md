@@ -11,6 +11,13 @@
   - Tailwind CSS & Phosphor Icons
   - GraphQL & GraphCMS
   - Apollo Client & Codegen
+
+## Bonus Level
+  O que foi feito além do desenvolvido durante o evento
+  - ✔️ Responsividade
+  - ✔️ Componente de boas vindas e 404 personalizados
+  - ✔️ Autoplay (for Rick Roll)
+  - ✔️ Bloqueio do click em links listados como "em breve"
   
 ## Design (by Rocketseat)
 ###  🖥️ Desktop
