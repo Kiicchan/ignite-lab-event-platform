@@ -18,6 +18,7 @@
   - ✔️ Componente de boas vindas e 404 personalizados
   - ✔️ Autoplay (for Rick Roll)
   - ✔️ Bloqueio do click em links listados como "em breve"
+  - ✔️ Scroll interno (main e sidebar) e scrollbar personalizada
   
 ## Design (by Rocketseat)
 ###  🖥️ Desktop
